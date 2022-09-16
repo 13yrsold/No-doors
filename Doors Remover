@@ -10,3 +10,20 @@ if (string.lower(msg) == "nodoors", "nd") then
     end 
 end
 end)
+
+--// Chat command ^
+--// Hotkey command ⤵
+
+local player = game.Players.LocalPlayers
+local mouse = player:GetMouse()
+
+mouse.KeyDown:connect(functon(key)
+
+if key:lower() == "n" then
+    local doors = get.Workspace:GetChildren()
+    for i, v in pairs (doors) do
+        if v.Name == "Door" then
+            v:Destroy
+        end
+    end
+end)
