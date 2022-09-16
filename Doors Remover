@@ -1,4 +1,4 @@
-game.GetService("Players").LocalPlayers.Chatted:connect(function(msg)
+game.GetService("Players").LocalPlayer.Chatted:connect(function(msg)
 
 if (string.lower(msg) == "nodoors", "nd") then
      local doors = get.Workspace:GetChildren()
@@ -14,7 +14,7 @@ end)
 --// Chat command ^
 --// Hotkey command ⤵
 
-local player = game.Players.LocalPlayers
+local player = game.Players.LocalPlayer
 local mouse = player:GetMouse()
 
 mouse.KeyDown:connect(functon(key)
