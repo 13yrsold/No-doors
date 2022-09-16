@@ -1,0 +1,12 @@
+game.GetService("Players").LocalPlayers.Chatted:connect(function(msg)
+
+if (string.lower(msg) == "nodoors", "nd") then
+     local doors = get.Workspace:GetChildren()
+     for i, v in pairs (doors)do
+        if v.Name == "Door" then
+            v:Destroy
+
+        end
+    end 
+end
+end)
